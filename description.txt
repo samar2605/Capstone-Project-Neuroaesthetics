@@ -1,0 +1,40 @@
+ts: time stamp
+gidx: gaze index ( counter number associated with particular gaze event)
+s: success status 0 - Okay any other value means some problem in data
+pc: pupil center (x,y,z) coordinate with origin on scene cam
+pd: pupil diameter in mm, specified for each eye
+gd: gaze direction - a unit vector with origin at pupil center
+gp: gaze position - position on the scene camera image where the gaze will be projected. 
+    Top left corner is (0,0), bottom right corner is (1,1).
+gp3: 3D gaze position, in mm, relative to the scene camera where the gaze is focused
+gy: gyroscope data - indicates rotation of glasses in unit degree per second
+ac: accelerometer data - indicates the rotation of the glasses. The accelerometer data has the unit meter per second squared
+[m/s²]. When the glasses are stationary, the value of the ac property will be approximately [0, -9,82, 0].
+
+
+Pupil Center
+{
+    ”ts”:1987702217,
+    ”s”:0,
+    ”gidx”:10043,
+    ”pc”:[-30,46,-21.70,-30.11],
+    ”eye”:”right”
+}
+ 
+Pupil Diameter
+{”ts”:1987702217,”s”:0,”gidx”:10043,”pd”:3.13,”eye”:”right”}
+
+Gaze Direction
+{”ts”:1987702217,”s”:0,”gidx”:10043,”gd”:[0.0475,0.1892,0.9808],”eye”:”right”}
+
+Gaze Position
+{”ts”:1987702217,”s”:0,”gidx”:10043,”l”:281518”gp”,:[0.5004,0.3755]}
+
+Gaze Position 3D
+{”ts”:1987702217,”s”:0,”gidx”:10043,”gp3”:[24.19,176.19,1044.84]}
+
+Gyroscope Info
+{"ts":926201645,"s":0,"gy":[0.770,0.961,0.596]}
+
+Accelerometer
+{"ts":926323274,"s":0,"ac":[-0.392,-9.758,-1.362]}
